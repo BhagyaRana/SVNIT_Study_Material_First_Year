@@ -1,0 +1,46 @@
+*{
+    /* margin:0 auto;
+    padding: 0 auto; */
+}
+
+body{
+    background-color: aqua;
+}
+
+.parent{
+    position: relative;
+    border: 1px solid red;
+    padding: 5px;
+    background-color: darkgrey;
+}
+
+.first{
+    position: sticky;
+    top:5px;
+    background-color: blueviolet;
+    border: 1px dotted;
+}
+
+.second{
+    right: 0px;;
+    position: absolute;
+    background-color: brown;
+    border: 1px solid chartreuse;
+}
+.relative{
+    top:15px;
+    position: relative;
+    background-color: indianred;
+    border:1px solid khaki;
+}
+.static{
+    background-color: coral;
+    border: 1px solid crimson;
+}
+
+.fixed{
+    position: fixed;
+    background-color: darkred;
+    bottom: 0;
+    right: 0;
+}

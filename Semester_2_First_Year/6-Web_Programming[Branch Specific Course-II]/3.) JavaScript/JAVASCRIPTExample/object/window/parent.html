@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to alert the location of the parent window when opening the new window.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+        window.open("", "", "width=200, height=100");
+        alert(window.parent.location);
+    }
+</script>
+
+</body>
+</html>

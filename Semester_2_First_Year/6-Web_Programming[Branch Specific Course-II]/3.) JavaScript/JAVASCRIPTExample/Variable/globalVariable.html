@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            var count=5;
+             var a=4;
+
+             function fcount() {
+                count+=5; //count=count+5;
+                a+=4;
+
+                document.write("<b>Inside function global count=</b>"+count+"<br />");
+                document.write("<b>Inside function global a=</b>"+a+"<br />");
+             }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("<b>outside function global count=</b>"+count+"<br />");
+            document.write("<b>outside function global a=</b>"+a+"<br />");
+
+            fcount();
+        </script>
+    </body>
+</html>

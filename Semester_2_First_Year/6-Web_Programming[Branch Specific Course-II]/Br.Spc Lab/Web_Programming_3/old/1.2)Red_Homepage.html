@@ -1,0 +1,196 @@
+<html>
+ 
+ <head>
+  <title>
+  	Website_Layout_1
+  </title>	
+  <style type="text/css">
+  	*{
+      margin:0 auto;
+    }
+    .container{
+      max-width: 95%;
+       left: 2.5%;
+       border: black;
+    }
+
+
+  	.header{
+  	  height: 100px;
+  	  width: 100%;
+  	  background-color : red;
+  	  font-family: Arial, Helvetica, sans-serif;
+  	  position: relative;
+      padding-bottom: 15px;
+      padding-top: 15px;
+  	
+  	}
+
+  	.content{
+  		height: 250px;
+  		width: 80%;
+  		background-color: white;
+  		/* border: 2px black; */
+  		position: relative;
+        float: left;
+  		
+  	}
+
+
+
+    .sidebar{
+      height: 250px;
+      width: 20%;
+      background-color: white;
+      border: 5px brown;
+      float: right;
+      position: relative;
+    }
+
+   .sidebar ul{
+      
+      padding-right: 5%;
+      padding-inline: 15px;
+    }
+
+    .sidebar ul li{
+      background-color: red;
+      border: 2px solid brown;
+      border-radius: 2px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /* padding-right: 5px; */
+
+       
+    }
+
+    .nav2{
+        background-color: lightcoral;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .part3{
+
+      background-color: red;
+      height: 200px;
+
+
+    }
+
+    #p{
+  
+       	padding: 5 5 5 5;
+        font-size: 25;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+        font-style: italic;
+    }    
+
+    
+    #h1{
+      color: white;
+      padding-left: 10px;
+      font-size: 50px;
+    }   
+    #h4{
+      color: white;
+      padding-left: 10px;
+      font-size: 20px;
+
+    }  
+    #h2{
+        padding-top: 10px;
+        color: white;
+        font-size: 15px;
+        align-self: auto;
+    }
+    #h5{
+        color: red;
+    }
+    #h3{
+        color: red;
+    }
+   
+   
+  </style>
+ </head>
+ 
+
+
+ <body>
+
+ <div class="container">	
+
+ 	  <div class="header">
+    
+     <h1 id="h1" align="left" >Welcome to My HomePage</h2><br>
+     <h3 id="h4" align="left" >Use the menu to select different style sheets</h3>
+     
+     
+ 	  </div>
+
+    <br>
+
+ 	  <div class="maincontent">
+
+      <div class = "Part1">
+
+        <div class="sidebar">
+            <p> 
+             <ul>
+              <li>StyleSheet 1</li>
+              
+              <li>StyleSheet 2</li>
+               
+              <li>StyleSheet 3</li>
+              
+              <li>StyleSheet 4</li>
+              
+              <li>StyleSheet 5</li>
+              
+             </ul> 
+            </p>
+        </div>
+
+        <div class="content">
+            <p id="p"  > 
+              <h1><b>Same Page Different Stylesheets</b></h1> <br>
+             This is demonstration of how different stylesheets can change the layout of your HTML Page.
+             You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+             <a href="stylesheet1">Stylesheet1</a> ,<a href="stylesheet2">Stylesheet2</a> ,<a href="stylesheet3">Stylesheet3</a> ,<a href="stylesheet4">Stylesheet4</a> , 
+           </p>
+           <br>
+           <h3>No Styles</h3>
+            <p>
+                This page uses DIV element to group different sections of the HTML Page.Click Here to see how the Page Looks : <br>
+                <a href="nostylesheet" >No StyleSheet</a>
+            </p>
+        </div>
+      </div>
+
+      <div class="nav2">
+          <h3 id="h3">Side-Bar</h3><br>
+          <p id="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur libero culpa quisquam?</p>
+          
+      </div>
+
+ 	  <div class="part3">
+       <p id="h2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nostrum doloribus accusantium, sit et minus! Repellendus veritatis amet nostrum iste. Rerum nobis quae sit. Voluptates libero sed amet facilis a.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facere ad nesciunt perspiciatis excepturi sit quaerat veritatis, necessitatibus aspernatur distinctio recusandae dolorem provident expedita placeat velit hic non minus aperiam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam optio porro, beatae autem aperiam omnis odit ab debitis dolores commodi illo suscipit pariatur, earum veniam delectus consequatur mollitia. Ea, voluptates.
+
+       </p> 
+      </div>
+ 	 
+      </div>
+      
+     </div>
+ 	
+ 	</div>
+ 
+</body>
+
+
+</html>

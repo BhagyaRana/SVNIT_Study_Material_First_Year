@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <title>
+      Student Info Form
+    </title>
+  </head>
+  <style>
+    /* Class Selector(.) */
+    .head {
+      background-color: rgb(26, 143, 189);
+    }
+    /* Element Selector(tag name) */
+    body {
+      background-image: url("bgimage2.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+  <body bgcolor="lightyellow">
+    <div class="head">
+      <br />
+      <center>
+        <img
+          src="svnitlogo.PNG"
+          alt="College Logo"
+          id="logo"
+          height="100px"
+          width="100px"
+          border="1px"
+        />
+      </center>
+
+      <h1 id="collegename">
+        <center>Sardar Vallabhbhai National Institute of Technology</center>
+      </h1>
+
+      <center>
+        <h2 id="title">
+          <i><u>Student Information Registration Form</u></i>
+        </h2>
+      </center>
+      <br />
+    </div>
+
+    <marquee
+      width="100%"
+      height="20px"
+      vspace="2px"
+      scrollamount="7"
+      scrolldelay="2"
+      direction="left"
+      ><i
+        >Last date for Submitting the Student Registration Form is 15 May,2020
+        11:59 pm</i
+      >
+    </marquee>
+    <!--Marquee- last date of registration  -->
+
+    <p id="instruction" align="center">
+      Please Do Fill the Student Registration Form Carefully and Accurately.
+    </p>
+    <table
+      align="center"
+      border="0"
+      bgcolor="lightyellow"
+      cellpadding="10px"
+      cellspacing="10px"
+    >
+      <tr>
+        <td><i>Name of Student</i> :</td>
+        <td><input type="text" id="name" /></td>
+      </tr>
+
+      <tr>
+        <td><i>Address of Student</i></td>
+      </tr>
+      <tr>
+        <td>Street/Apartment/Rowhouse Details :</td>
+        <td><textarea></textarea></td>
+      </tr>
+      <tr>
+        <td>City :</td>
+        <td><input type="text" id="City" /></td>
+      </tr>
+      <tr>
+        <td>State :</td>
+        <td><input type="text" id="state" /></td>
+      </tr>
+      <tr>
+        <td>Pincode :</td>
+        <td><input type="text" id="Pincode" /></td>
+      </tr>
+
+      <tr>
+        <td><i>BirthDate of Student</i> :</td>
+        <td><input type="date" id="BirthDate" /></td>
+      </tr>
+
+      <tr>
+        <td><i>Contact Details of Student</i></td>
+      </tr>
+      <tr>
+        <td>Email of Student :</td>
+        <td><input type="email" id="Email" /></td>
+      </tr>
+      <tr>
+        <td>Mobile Number of Student :</td>
+        <td><input type="number" id="Mobile" /></td>
+      </tr>
+
+      <tr>
+        <td><i>Hobbies</i> :</td>
+        <td>
+          <input type="checkbox" name="h1" />Writing
+          <input type="checkbox" name="h1" />Painting
+          <input type="checkbox" name="h1" />Graphic Design
+          <input type="checkbox" name="h1" />Blogging
+          <input type="checkbox" name="h1" />Photography
+          <input type="checkbox" name="h1" />Dance
+          <input type="checkbox" name="h1" />Garderning
+          <input type="checkbox" name="h1" />Knitting
+          <input type="checkbox" name="h1" />Cooking
+        </td>
+      </tr>
+
+      <tr>
+        <td><i>Gender of Student</i> :</td>
+        <td>
+          <input type="radio" name="gender" checked="checked" />Male
+          <input type="radio" name="gender" />Female
+          <input type="radio" name="gender" />Trans-Gender
+        </td>
+      </tr>
+
+      <tr>
+        <td><i>Semester of Student</i> :</td>
+        <td>
+          <select size="1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><i>Year of Student</i> :</td>
+        <td>
+          <select size="1">
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Subjects :</td>
+        <td>
+          <select multiple size="5">
+            <option>Digital Electronics</option>
+            <option>Operating System</option>
+            <option>Analysis Design of Algorithm</option>
+            <option>Microprocessor</option>
+            <option>Database Management System</option>
+            <option>Mobile Communications</option>
+            <option>Cryptography and Network Security</option>
+            <option>Performance Evaluation</option>
+            <option>Programming Languages</option>
+            <option>Ad-Hoc Networks</option>
+            <option>Discrete Mathematical Structures</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="submit" value="Submit" /></td>
+        <td><input type="reset" value="Clear" /></td>
+      </tr>
+    </table>
+  </body>
+</html>

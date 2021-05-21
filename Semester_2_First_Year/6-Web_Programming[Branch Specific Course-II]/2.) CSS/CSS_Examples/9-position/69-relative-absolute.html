@@ -1,0 +1,42 @@
+<html>
+<head>
+    <style>
+
+        .position-static{
+            position: static;
+            left: 50px;
+        }
+
+        .position-absolute{
+            position: absolute;
+            bottom: 4px;
+
+        }
+        .position-relative{
+            position: relative;
+            left: 50px;
+            border: 2px solid green;
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="position-static">
+    text hello world
+</div>
+
+
+<div class="position-relative">
+    Position Relative
+    <div class="position-absolute" style="z-index: 0;background: red">
+        Position Absolute 1
+    </div>
+    <div class="position-absolute" style="z-index: 1;background: gray">
+        Position Absolute 2
+    </div>
+</div>
+</body>
+</html>

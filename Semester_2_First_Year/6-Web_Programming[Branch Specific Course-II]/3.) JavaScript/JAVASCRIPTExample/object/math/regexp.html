@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>JavaScript RegExp exec Method</title>
+</head>
+<body>
+<script type="text/javascript">
+    var str = "Javascript is an interesting scripting language";
+    var re = new RegExp( "script","g");
+
+    //g: Performs a global match that is, find all matches rather than
+    // stopping after the first match.
+
+    var result = re.test(str);
+    document.write("Test 1 - returned value : " + result+"<br />");
+    re = new RegExp( "pushing","g");
+    var result = re.test(str);
+    document.write("Test 2 - returned value : " + result);
+</script>
+</body>
+</html>

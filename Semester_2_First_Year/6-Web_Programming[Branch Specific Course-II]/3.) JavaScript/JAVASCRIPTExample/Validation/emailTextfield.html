@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            function validate() {
+                var em=document.getElementById("email").value.indexOf("@");
+                var age=document.getElementById("age").value;
+                var fname=document.getElementById("fname").value;
+
+                submitOK="true";
+
+                if(fname.length>15)
+                {
+                    alert("The name should be less than 15 charachters");
+                    submitOK="false";
+                }
+
+                if(isNaN(age)||age<1||age>100)
+                {
+                    alert("The age must be a number between 1 and 100");
+                    submitOK="false";
+                }
+
+                if(em==-1)
+                {
+                    alert("Email is not valid");
+                    submitOK="false";
+                }
+
+                if(submitOk=="false")
+                {
+                    return false;
+                }
+            }
+        </script>
+    </head>
+<body>
+    <form action="" onsubmit="return validate()">
+        Name (max 15 char):
+            <input type="text" id="fname" size="15"><br />
+        Age:
+            <input type="text" id="age" size="20"><br />
+        E-mail:
+            <input type="text" id="email" size="20"><br />
+        <br />
+    </form>
+</body>
+</html>

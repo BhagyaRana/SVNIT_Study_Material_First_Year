@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Validations</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: skyblue;
+        }
+
+        .registration-form {
+            width: 350px;
+            margin: 0 auto;
+            border: gray 1px solid;
+            padding: 50px;
+        }
+
+        input {
+            height: 20px;
+        }
+
+        .input-label {
+            display: inline-block;
+            width: 70px;
+        }
+
+        .input-container {
+            margin-bottom: 16px;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            background: #ffffff;
+        }
+
+        .semester {
+            height: 20px;
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="margin-bottom: 40px; text-align: center">
+    JavaScript Validations
+</h1>
+<div class="registration-form">
+
+    <form action="Simpleexample.html" name="registrationForm" onsubmit="return validateForm()" method="post">
+        <div class="input-container">
+            <label class="input-label">Name</label>
+            <input type="text" name="name">
+        </div>
+        <div class="input-container">
+            <label class="input-label">Email</label>
+            <input type="text" name="email">
+        </div>
+        <div class="input-container">
+            <label class="input-label">Gender</label>
+            <div style="display: inline">
+                <div style="display: inline">
+                    <input id="male_input" type="radio" name="gender">
+                    <label for="male_input"> Male</label>
+                </div>
+                <div style="display: inline">
+                    <input id="female_input" type="radio" name="gender">
+                    <label for="female_input"> Female</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <label class="input-label">Age</label>
+            <input type="text" name="age">
+        </div>
+        <div class="input-container">
+            <label class="input-label">
+                Semester
+            </label>
+            <select class="semester" name="semester">
+                <option value="">Select Semester</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+                <option value="7">Semester 7</option>
+                <option value="8">Semester 8</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <input type="checkbox" value="1" id="terms" name="terms"><label for="terms"> Please accept Terms and
+            Conditions</label>
+        </div>
+
+        <button class="submit-button" type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+
+        //Get input of HTML fields into javascript variables
+        var nameInput = document.forms["registrationForm"]["name"].value;
+        var emailInput = document.forms["registrationForm"]["email"].value;
+        var semesterInput = document.forms["registrationForm"]["semester"].value;
+        var ageInput = document.forms["registrationForm"]["age"].value;
+        var genderInput = document.forms["registrationForm"]["gender"].value;
+
+        /**
+         * Validation for Name
+         */
+
+        //Check name is not empty
+        if (nameInput == "") {
+            alert("Please enter name");
+            return false;
+        }
+
+        //Check name field must contain only characters A-Z, a-z and space. if it contain other characters it will show error in alert box
+        var nameRegx = /[A-Za-z ]$/;
+
+        if (nameRegx.test(nameInput) == false) {
+            alert('Name should contain only characters.');
+            return false;
+        }
+
+        //Check name should not contain characters more than 10
+        if (nameInput.length > 10) {
+            alert('Name should contain maximum 10 characters.');
+            return false;
+        }
+
+        /**
+         * Validation for Email
+         */
+        //Check email is not empty
+        if (emailInput == "") {
+            alert("Please enter email");
+            return false;
+        }
+
+        //Check valid email address with regular expression
+        var emailRegx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/;
+
+        if (emailRegx.test(emailInput) == false) {
+            alert('Invalid Email Address');
+            return false;
+        }
+//hardidesai156@gmail.com
+        /**
+         * Validation for Gender
+         */
+        //Check radio button validation for gender
+        if (genderInput == "") {
+            alert("Please select gender");
+            return false;
+        }
+
+        /**
+         * Validation for Age
+         */
+
+        //check age is not empty
+        if (ageInput == "") {
+            alert("Please enter age");
+            return false;
+        } else {
+            //we got age as string from HTML input, though we enter number i.e "29" not 29
+            //So Number("29") will converted to 29
+            ageInput = Number(ageInput);
+        }
+
+        //check age is integer value
+        if (!Number.isInteger(ageInput)) {
+            alert("Please enter valid number for age.");
+            return false;
+        }
+
+        //check age must be between 10 and 40
+        if (ageInput < 10 || ageInput > 40) {
+            alert("Your age must be between 10 to 40");
+            return false;
+        }
+
+        /**
+         * Validation for Semester
+         */
+
+        if (semesterInput == "") {
+            alert("Please select semester");
+            return false;
+        }
+
+        /**
+         * Validation for Terms and condition
+         */
+        //We can check the checkbox value by .checked property of checkbox
+        if (!document.getElementById("terms").checked) {
+            alert("Please check terms and conditions");
+            return false;
+        }
+
+        /**
+         * If all validation are passed, we are showing form submit message
+         */
+        alert("You can submit the form.");
+        return true;
+    }
+</script>
+</body>
+</html>

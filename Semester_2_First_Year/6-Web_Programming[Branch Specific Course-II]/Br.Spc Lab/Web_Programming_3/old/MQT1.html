@@ -1,0 +1,182 @@
+<html>
+ 
+ <head>
+  <title>
+  	Media_Query_Lab_Task_1
+  </title>	
+  <style type="text/css">
+  	*{
+      margin:0 auto;
+    }
+    .container{
+      max-width: 90%;
+       left: 5%;
+    }
+
+
+  	.header{
+  	  height: 100px;
+  	  width: 100%;
+     
+  	  background-color: green;
+  	  border: 5px black;
+  	  font-family: verdana;
+      
+  	  /*top: 20px;*/
+  	  position: relative;
+  	  /*vertical-align: center;	*/
+  	}
+
+  	.content{
+  		height: 400px;
+  		width: 70%;
+  		background-color: lightblue;
+  		border: 2px black;
+  		position: relative;
+      float: right;
+  		
+  	}
+
+  	/*.footer{
+  		height: 50px;
+  		background-color: pink;
+        width: 100%;
+        border: 1px black;
+        position: fixed;
+        bottom: 40px;
+        
+      
+  	}*/
+
+    .sidebar{
+      height: 700px;
+      width: 25%;
+      
+      border: 5px brown;
+      
+      float: left;
+      position: relative;
+    }
+
+   .sidebar ul{
+      
+      padding-left: 0%;
+    }
+
+    .sidebar ul li{
+      background-color: grey;
+      border: 2px solid black;
+      border-radius: 2px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+
+       
+    }
+
+    
+    #p{
+  
+       	padding: 5 5 5 5;
+        font-size: 25;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+        font-style: italic;
+    }    
+    .animatediv{
+      height: 100px;
+      width: 100px;
+      animation-name: Block;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      background-color: red;
+      position: relative;
+    }
+
+
+       @keyframes Block{
+
+       0% {background-color : violet;left : -45%;}
+       12% {background-color : indigo;left : -30%;}
+       25% {background-color : blue;left : -15%;}
+       38% {background-color : green;left:  0%;}
+       50% {background-color : yellow;left : 15%;}
+       63% {background-color : orange;left : 30%;}
+       75% {background-color : red;left : 45%;}
+       100% {background-color : white;left : 50%;}
+
+
+       }
+    
+    #h1{
+      color: white;
+    }   
+    #h4{
+      color: white;
+    }  
+   
+   
+  </style>
+ </head>
+ 
+
+
+ <body>
+
+ <div class="container">	
+
+ 	  <div class="header">
+    
+     <h1 id="h1" align="left" >Welcome to My CSS Page</h2>
+     <h3 id="h4" align="left" >Use the menu to select different style sheets</h3>
+     
+ 	  </div>
+
+    <br>
+
+ 	  <div class="maincontent">
+  
+     <div class="sidebar">
+      <p> 
+       <ul>
+        <li>StyleSheet 1</li>
+        <br> 
+        <li>StyleSheet 2</li>
+        <br> 
+        <li>StyleSheet 3</li>
+        <br> 
+        <li>StyleSheet 4</li>
+        <br>
+        <li>StyleSheet 5</li>
+        <br> 
+      </ul> 
+      </p>
+    </div>
+
+ 	  <div class="content">
+ 	   <p id="p" align="center" > 
+ 	     This is where Content Needs to be Displayed!!<br>
+       CASCADING STYLE SHEET<br>
+       Using CSS is Easy and Can be Mastered with Practice<br>
+     </p>  
+       <div class="animatediv">
+
+         <!-- <div class="Block">
+
+         </div> -->
+
+   	  </div>
+ 	
+    </div>
+ 	
+
+    <!-- <div class="footer">
+
+    </div> -->
+ 	 
+ 	</div>
+ 
+</body>
+
+
+</html>

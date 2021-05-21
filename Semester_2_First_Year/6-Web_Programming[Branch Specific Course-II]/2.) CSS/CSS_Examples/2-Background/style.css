@@ -1,0 +1,94 @@
+html, * {padding:0; margin:0;} //defining 0 margin and padding for all elements
+
+                                            body {background:url('smily.jfif') no-repeat top center #ada6a0; font-family:Arial,Verdana,Helvetica,sans-serif; font-size:12px;}
+
+a {color:#000;text-decoration:none;}
+
+a:hover{text-decoration:underline;}
+
+#frame {width:960px; margin:0 auto;} //Frame Container's CSS
+
+/* Logo CSS Starts */
+#logo {width:200px; height:80px; margin:15px auto;}
+/* Logo CSS ENDS*/
+
+/* Navigation and Search  CSS Starts*/
+
+.nav {width:100%;height:45px;background:#fff; -moz-box-shadow:0 0 8px #666; -webkit-box-shadow:0 0 8px #666; box-shadow:0 0 8px #666;}
+.nav ul {list-style:none;}
+.nav ul li {float:left;font-size:16px; margin:13px 22px;}
+.nav div {float:right;}
+.nav p {margin:15px; float:left;}
+#search {float:right;border:none;}
+
+#search input {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 8px;
+    width: 285px;
+    margin:5px;
+}
+#search input.btn {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 10px 0 0 -40px;
+    padding: 0;
+    width: auto;
+}
+/* Navigation and Search CSS Ends */
+/* Gallery Area */
+#gallery { //css for gallery div
+width:960px;
+    height:370px;
+    margin:20px auto;
+    text-align:center;
+    background:#fff; -moz-box-shadow:0 0 8px #666;
+    -webkit-box-shadow:0 0 8px #666;
+    box-shadow:0 0 8px #666;
+}
+#gallery img {padding:10px 0;} //css for img with in the gallery
+                                     /* Content Blocks */
+                                 .blocks {width:200px;
+                                     float:left;
+                                     margin-right:26px;
+                                     padding:10px;
+                                     height:350px;
+                                     background:#fff;
+                                     -moz-box-shadow:0 0 8px #666;
+                                     -webkit-box-shadow:0 0 8px #666;
+                                     box-shadow:0 0 8px #666;
+                                     text-align:justify;
+                                     margin-bottom:15px;
+                                 }
+.blocks img {margin-bottom:5px;}
+.more {font-size:12px; float:right; color:#000; margin-top:7px; text-decoration:underline;}
+
+/* Welcome Text Box */
+#desc-box {
+    height:160px;
+    margin:10px auto;
+    text-align:center;
+    background:#fff;
+    -moz-box-shadow:0 0 8px #666;
+    -webkit-box-shadow:0 0 8px #666;
+    box-shadow:0 0 8px #666;
+    overflow:hidden;
+    padding:10px;
+}
+.thumbnails-div {
+    width:200px;
+    float:left;
+}
+.thumbnails-div img {
+    margin:4px;
+}
+.description {
+    float:right;
+    width:710px;
+    padding:10px;
+    text-align:justify;
+}
+.description h3{margin:5px 0;}

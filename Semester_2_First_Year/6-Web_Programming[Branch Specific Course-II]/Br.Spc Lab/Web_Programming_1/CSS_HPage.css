@@ -1,0 +1,31 @@
+/*Universal Selector*/
+* {
+  margin: auto;
+  padding: 0%;
+}
+/* ID Selector */
+#marquee {
+  color: rgb(212, 40, 40);
+}
+/* Class Selector(.) */
+.head {
+  background-color: rgb(9, 32, 36);
+}
+/* Group Selector(,) */
+h1,
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  font-weight: bold;
+  font-style: oblique;
+  color: gold;
+}
+/* Element Selector(tag name) */
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: lightyellow;
+}

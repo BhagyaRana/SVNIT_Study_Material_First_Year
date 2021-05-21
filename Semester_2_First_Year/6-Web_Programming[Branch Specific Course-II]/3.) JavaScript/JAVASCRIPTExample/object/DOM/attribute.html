@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the name of the button's first attribute.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var btn = document.getElementsByTagName("BUTTON")[0];
+        var x = btn.attributes[0].name;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+
+</body>
+</html>
